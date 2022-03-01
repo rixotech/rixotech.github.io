@@ -3,3 +3,4 @@
 
 # Allowed Hidden Files
 !.gitignore
+!.github
