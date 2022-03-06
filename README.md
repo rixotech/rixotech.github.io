@@ -29,10 +29,10 @@ Secondary `#fc9d32` | `hsla(32, 97, 59, 100)`
 
 We choose 2 fonts for our branding. The fronts are:
 
-1. [Poppins](https://fonts.google.com/specimen/Poppins?query=popp)
-   ![Poppins](https://user-images.githubusercontent.com/75246159/156506078-aa932f73-f002-4369-bf12-f66cdab7330c.PNG)
-2. [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-   ![Open Sans](https://user-images.githubusercontent.com/75246159/156506180-8c5b2109-cd05-4a60-b889-8093917f439a.PNG)
+1. [Fredoka](https://fonts.google.com/specimen/Fredoka)
+   ![Fredoka](https://user-images.githubusercontent.com/75246159/156911797-c8298e23-4b69-4d7e-9ed3-b4d1fbec17e0.PNG)
+2. [Roboto](https://fonts.google.com/specimen/Roboto)
+   ![Roboto](https://user-images.githubusercontent.com/75246159/156911827-e3e834ad-9783-4e66-9fb0-a8c2060738e1.PNG)
 
 ---
 
