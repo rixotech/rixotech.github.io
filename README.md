@@ -4,8 +4,6 @@ Your IT partner.
 
 ## Case Study and Prototypes
 
-![RixoTech Branding](https://user-images.githubusercontent.com/75246159/156507417-7a6a7ef8-f4bd-4da7-b7d8-401f3a1d4db4.PNG)
-
 ## COLOR
 
 Our brand colors are:
