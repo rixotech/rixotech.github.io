@@ -34,6 +34,28 @@ We choose 2 fonts for our branding. The fronts are:
 
 ---
 
+## BREAKPOINTS
+
+```css
+/* sm */
+@media (min-width: 640px) {
+}
+/* md */
+@media (min-width: 768px) {
+}
+/* lg */
+@media (min-width: 1024px) {
+}
+/* xl */
+@media (min-width: 1280px) {
+}
+/* 2xl */
+@media (min-width: 1536px) {
+}
+```
+
+---
+
 ## REFERENCE
 
 -   [BrainHub](https://brainhub.eu)
