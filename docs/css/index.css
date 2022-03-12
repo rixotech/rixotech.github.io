@@ -483,8 +483,8 @@
   padding-bottom: 4rem;
   --clr-primary: #1d1d1f;
   --clr-secondary: #aaaab3;
-  --clr-third: #fd5b2f;
-  --clr-foruth: rgba(231, 210, 205, 0.788);
+  --clr-third: hsl(32, 97%, 59%);
+  --clr-foruth: hsla(32, 97%, 59%, 0.4);
   /* footer section */
   /* footer nav */
   /* .footer-menu */
