@@ -26,3 +26,29 @@
 - [ ] Description -> Md Rayhan Bapari - 01
 - [ ] Agents -> None
 - [ ] Footer -> Shibli Noman - 01
+
+### Misc
+
+[ ] - Home / Generalize Font Size.
+
+[ ] - Home / Home Navigation Menu.
+[ ] - Home / Navigation Color.
+[ ] - Home / Navigation Sign Up Padding Change.
+[ ] - Home / New Feature Padding Change.
+
+[ ] - Home / Hero Card Hover Effect.
+[ ] - Home / Hero Responsive.
+
+[ ] - Home / Featured Companies Slider.
+
+[ ] - Home / Gifts Hover Effect.
+
+[ ] - Home / Trusted Clients Author Name Opacity Change.
+
+[ ] - Home / Footer Hover Color.
+[ ] - Home / Footer Logo Change.
+[ ] - Home / Footer Logo Hover Color Change.
+
+### Suggestion
+
+[ ] - Home / Footer Background Color.
