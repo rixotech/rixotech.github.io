@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+@keyframes main_header__navigation__list__item__link_hover {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+#jannatinnaim-02 .container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+#jannatinnaim-02 .main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#jannatinnaim-02 .main_header__container {
+  padding: 2rem 0;
+}
+#jannatinnaim-02 .main_header__brand {
+  width: 15%;
+}
+#jannatinnaim-02 .main_header__brand__logo {
+  width: 100%;
+}
+#jannatinnaim-02 .main_header__navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#jannatinnaim-02 .main_header__navigation__list__item__link, #jannatinnaim-02 .main_header__navigation__list__item--special__link {
+  text-decoration: none;
+  color: #000;
+  font-family: sans-serif;
+  position: relative;
+  display: block;
+  padding: 0 0.75rem;
+}
+#jannatinnaim-02 .main_header__navigation__list__item__link:hover, #jannatinnaim-02 .main_header__navigation__list__item--special__link:hover {
+  color: #32308d;
+}
+#jannatinnaim-02 .main_header__navigation__list__item__link:hover::before, #jannatinnaim-02 .main_header__navigation__list__item--special__link:hover::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  background: linear-gradient(to right, rgba(50, 48, 141, 0.2), #32308d, rgba(50, 48, 141, 0.2));
+  border-radius: 50%;
+  left: 50%;
+  bottom: -0.2rem;
+  transform: translateX(-50%);
+  animation-name: main_header__navigation__list__item__link_hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+#jannatinnaim-02 .main_header__navigation__list__item__link:hover::after, #jannatinnaim-02 .main_header__navigation__list__item--special__link:hover::after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.25rem;
+  background: #32308d;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--special {
+  border: 1px solid #32308d;
+  border-radius: 2rem;
+  padding: 0.4rem;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--special__link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #000;
+  padding: 0;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--special__link__name {
+  display: inline-block;
+  background: #fc9d31;
+  border-radius: 2rem;
+  padding: 0.2rem 0.4rem;
+  color: #fff;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--special__link__info {
+  font-size: 0.75rem;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--special__link:hover::before {
+  display: none;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--special__link:hover::after {
+  display: none;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--active a {
+  position: relative;
+  color: #32308d;
+}
+#jannatinnaim-02 .main_header__navigation__list__item--active a::after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.25rem;
+  background: #32308d;
+}
+#jannatinnaim-02 .main_header__user_auth {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#jannatinnaim-02 .main_header__user_auth__login {
+  text-decoration: none;
+  color: #000;
+  font-family: sans-serif;
+  border-bottom: 2px solid #32308d;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-02 .main_header__user_auth__login:hover {
+  color: #32308d;
+}
+#jannatinnaim-02 .main_header__user_auth__sign_up {
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  background: #32308d;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-02 .main_header__user_auth__sign_up:hover {
+  background: #1b1a4c;
+}
+@media (max-width: 1024px) {
+  #jannatinnaim-02 .main_header__navigation__list__item--special {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #jannatinnaim-02 .main_header__user_auth {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  #jannatinnaim-02 .main_header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #jannatinnaim-02 .main_header__brand {
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */
