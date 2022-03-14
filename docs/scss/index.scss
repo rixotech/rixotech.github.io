@@ -40,7 +40,7 @@
 
     &:hover {
       transform: translateY(-0.5rem);
-      background: hsl(241%, 49%, 20%);
+      background: hsl(241, 49, 20);
     }
   }
 
@@ -97,6 +97,26 @@
       align-items: center;
       position: relative;
 
+      &:hover {
+        .hero {
+          &__banner {
+            &__overlays {
+              &__voucher {
+                transform: translate(-0.2rem, -0.2rem);
+              }
+
+              &__reviews {
+                transform: translate(-0.2rem, 0.2rem);
+              }
+
+              &__stats {
+                transform: translate(0.2rem, 0.2rem);
+              }
+            }
+          }
+        }
+      }
+
       &__image {
         border-radius: 50%;
         display: block;
@@ -109,7 +129,7 @@
           transition: all 0.3s ease;
 
           &:hover {
-            transform: translate(-0.5rem, -0.5rem);
+            transform: translate(-0.4rem, -0.4rem) !important;
             cursor: pointer;
           }
         }
