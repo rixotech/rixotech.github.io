@@ -35,6 +35,13 @@
     padding: 1rem 2rem;
     border-radius: 0.75rem;
     box-shadow: 0px 16px 22px -15px $primary-color;
+    transition: all 0.3s ease;
+    // position: relative;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      background: hsl(241%, 49%, 20%);
+    }
   }
 
   .hero {
@@ -99,6 +106,12 @@
         > * {
           position: absolute;
           border-radius: 0.75rem;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translate(-0.5rem, -0.5rem);
+            cursor: pointer;
+          }
         }
 
         &__voucher {
@@ -273,6 +286,36 @@
     }
   }
 
+  @media (max-width: 576px) {
+    .hero {
+      &__banner {
+        &__overlays {
+          > * {
+            width: 100%;
+          }
+
+          &__voucher {
+            justify-content: center;
+            gap: 1rem;
+          }
+
+          &__reviews {
+            align-items: center;
+          }
+
+          &__stats {
+            align-items: center;
+
+            &__reviewers {
+              position: relative;
+              left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .stats {
     display: flex;
     justify-content: space-between;
@@ -440,12 +483,6 @@
 
       > * {
         width: 100%;
-      }
-
-      &__content {
-        &__name {
-          font-size: 2.75rem;
-        }
       }
     }
   }

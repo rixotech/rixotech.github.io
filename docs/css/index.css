@@ -23,6 +23,11 @@
   padding: 1rem 2rem;
   border-radius: 0.75rem;
   box-shadow: 0px 16px 22px -15px #32308d;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-01 .call_to_action:hover {
+  transform: translateY(-0.5rem);
+  background: #1b1a4c;
 }
 #jannatinnaim-01 .hero {
   display: flex;
@@ -76,6 +81,11 @@
 #jannatinnaim-01 .hero__banner__overlays > * {
   position: absolute;
   border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-01 .hero__banner__overlays > *:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  cursor: pointer;
 }
 #jannatinnaim-01 .hero__banner__overlays__voucher {
   left: 0;
@@ -213,6 +223,25 @@
     transform: translateX(-50%);
   }
 }
+@media (max-width: 576px) {
+  #jannatinnaim-01 .hero__banner__overlays > * {
+    width: 100%;
+  }
+  #jannatinnaim-01 .hero__banner__overlays__voucher {
+    justify-content: center;
+    gap: 1rem;
+  }
+  #jannatinnaim-01 .hero__banner__overlays__reviews {
+    align-items: center;
+  }
+  #jannatinnaim-01 .hero__banner__overlays__stats {
+    align-items: center;
+  }
+  #jannatinnaim-01 .hero__banner__overlays__stats__reviewers {
+    position: relative;
+    left: 1rem;
+  }
+}
 #jannatinnaim-01 .stats {
   display: flex;
   justify-content: space-between;
@@ -340,9 +369,6 @@
   }
   #jannatinnaim-03 .features > * {
     width: 100%;
-  }
-  #jannatinnaim-03 .features__content__name {
-    font-size: 2.75rem;
   }
 }
 
