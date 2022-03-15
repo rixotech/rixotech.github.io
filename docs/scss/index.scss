@@ -597,6 +597,8 @@
         padding: 0.4rem;
         border-radius: 1rem;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        background: #ffffff;
+        transition: all 0.3s ease;
 
         &__item {
           display: block;
@@ -604,11 +606,20 @@
           padding: 1rem;
           width: 64px;
         }
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
       }
 
       &__container:nth-child(1) {
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #effafc, #e8f3f5);
+        }
+
+        &:hover {
+          background: linear-gradient(to bottom, #acedf8, #e8f3f5);
         }
       }
 
@@ -616,17 +627,29 @@
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #feefef, #f7e8e8);
         }
+
+        &:hover {
+          background: linear-gradient(to bottom, #ffa2a2, #f7e8e8);
+        }
       }
 
       &__container:nth-child(3) {
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #fefbef, #f8f5e9);
         }
+
+        &:hover {
+          background: linear-gradient(to bottom, #ffeea9, #f8f5e9);
+        }
       }
 
       &__container:nth-child(4) {
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #eff9fe, #e9f3f8);
+        }
+
+        &:hover {
+          background: linear-gradient(to bottom, #a1e0ff, #e9f3f8);
         }
       }
     }
