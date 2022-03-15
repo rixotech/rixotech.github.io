@@ -289,7 +289,7 @@
 
           &__reviews {
             bottom: auto;
-            top: 50%;
+            top: 52%;
             left: 50%;
             transform: translateX(-50%);
           }
@@ -297,7 +297,7 @@
           &__stats {
             bottom: auto;
             right: auto;
-            top: 72%;
+            top: 74%;
             left: 50%;
             transform: translateX(-50%);
           }
@@ -372,8 +372,37 @@
       justify-content: space-between;
       align-items: center;
 
-      > * {
-        border-radius: 1rem;
+      &__prev {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 1rem;
+        border-radius: 50%;
+
+        &__image {
+          border-radius: 50%;
+          display: block;
+        }
+      }
+
+      &__next {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 1rem;
+        border-radius: 50%;
+
+        &__image {
+          border-radius: 50%;
+          display: block;
+        }
+      }
+
+      &__icons {
+        display: flex;
+        gap: 0.75rem;
+
+        > * {
+          border-radius: 1rem;
+        }
       }
     }
   }

@@ -220,14 +220,14 @@
   }
   #jannatinnaim-01 .hero__banner__overlays__reviews {
     bottom: auto;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%);
   }
   #jannatinnaim-01 .hero__banner__overlays__stats {
     bottom: auto;
     right: auto;
-    top: 72%;
+    top: 74%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -283,7 +283,31 @@
   justify-content: space-between;
   align-items: center;
 }
-#jannatinnaim-01 .stats__showcase > * {
+#jannatinnaim-01 .stats__showcase__prev {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  border-radius: 50%;
+}
+#jannatinnaim-01 .stats__showcase__prev__image {
+  border-radius: 50%;
+  display: block;
+}
+#jannatinnaim-01 .stats__showcase__next {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  border-radius: 50%;
+}
+#jannatinnaim-01 .stats__showcase__next__image {
+  border-radius: 50%;
+  display: block;
+}
+#jannatinnaim-01 .stats__showcase__icons {
+  display: flex;
+  gap: 0.75rem;
+}
+#jannatinnaim-01 .stats__showcase__icons > * {
   border-radius: 1rem;
 }
 @media (max-width: 1140px) {
