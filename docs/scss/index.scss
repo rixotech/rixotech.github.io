@@ -40,7 +40,7 @@
 
     &:hover {
       transform: translateY(-0.5rem);
-      background: hsl(241%, 49%, 20%);
+      background: hsl(241, 49, 20);
     }
   }
 
@@ -97,6 +97,26 @@
       align-items: center;
       position: relative;
 
+      &:hover {
+        .hero {
+          &__banner {
+            &__overlays {
+              &__voucher {
+                transform: translate(-0.2rem, -0.2rem);
+              }
+
+              &__reviews {
+                transform: translate(-0.2rem, 0.2rem);
+              }
+
+              &__stats {
+                transform: translate(0.2rem, 0.2rem);
+              }
+            }
+          }
+        }
+      }
+
       &__image {
         border-radius: 50%;
         display: block;
@@ -109,7 +129,7 @@
           transition: all 0.3s ease;
 
           &:hover {
-            transform: translate(-0.5rem, -0.5rem);
+            transform: translate(-0.4rem, -0.4rem) !important;
             cursor: pointer;
           }
         }
@@ -269,7 +289,7 @@
 
           &__reviews {
             bottom: auto;
-            top: 50%;
+            top: 52%;
             left: 50%;
             transform: translateX(-50%);
           }
@@ -277,7 +297,7 @@
           &__stats {
             bottom: auto;
             right: auto;
-            top: 72%;
+            top: 74%;
             left: 50%;
             transform: translateX(-50%);
           }
@@ -352,8 +372,49 @@
       justify-content: space-between;
       align-items: center;
 
-      > * {
-        border-radius: 1rem;
+      &__prev {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 1rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+
+        &__image {
+          border-radius: 50%;
+          display: block;
+        }
+      }
+
+      &__next {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 1rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+
+        &__image {
+          border-radius: 50%;
+          display: block;
+        }
+      }
+
+      &__icons {
+        display: flex;
+        gap: 0.75rem;
+
+        > * {
+          border-radius: 1rem;
+        }
       }
     }
   }
@@ -548,6 +609,8 @@
         padding: 0.4rem;
         border-radius: 1rem;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        background: #ffffff;
+        transition: all 0.3s ease;
 
         &__item {
           display: block;
@@ -555,11 +618,20 @@
           padding: 1rem;
           width: 64px;
         }
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
       }
 
       &__container:nth-child(1) {
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #effafc, #e8f3f5);
+        }
+
+        &:hover {
+          background: linear-gradient(to bottom, #acedf8, #e8f3f5);
         }
       }
 
@@ -567,17 +639,29 @@
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #feefef, #f7e8e8);
         }
+
+        &:hover {
+          background: linear-gradient(to bottom, #ffa2a2, #f7e8e8);
+        }
       }
 
       &__container:nth-child(3) {
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #fefbef, #f8f5e9);
         }
+
+        &:hover {
+          background: linear-gradient(to bottom, #ffeea9, #f8f5e9);
+        }
       }
 
       &__container:nth-child(4) {
         .gifts__logos__container__item {
           background: linear-gradient(to bottom, #eff9fe, #e9f3f8);
+        }
+
+        &:hover {
+          background: linear-gradient(to bottom, #a1e0ff, #e9f3f8);
         }
       }
     }
@@ -607,6 +691,7 @@
         &__info {
           font-family: $primary-font-family;
           margin-bottom: 2rem;
+          opacity: 0.7;
         }
 
         &__author {
@@ -620,7 +705,7 @@
           }
 
           &__info {
-            opacity: 0.65;
+            opacity: 0.45;
           }
         }
 
@@ -629,6 +714,12 @@
             padding: 1rem;
             display: inline-block;
             border-radius: 50%;
+            transition: all 0.3s ease;
+
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.1);
+            }
           }
 
           &__previous {

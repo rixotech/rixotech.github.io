@@ -74,6 +74,15 @@
   align-items: center;
   position: relative;
 }
+#jannatinnaim-01 .hero__banner:hover .hero__banner__overlays__voucher {
+  transform: translate(-0.2rem, -0.2rem);
+}
+#jannatinnaim-01 .hero__banner:hover .hero__banner__overlays__reviews {
+  transform: translate(-0.2rem, 0.2rem);
+}
+#jannatinnaim-01 .hero__banner:hover .hero__banner__overlays__stats {
+  transform: translate(0.2rem, 0.2rem);
+}
 #jannatinnaim-01 .hero__banner__image {
   border-radius: 50%;
   display: block;
@@ -84,7 +93,7 @@
   transition: all 0.3s ease;
 }
 #jannatinnaim-01 .hero__banner__overlays > *:hover {
-  transform: translate(-0.5rem, -0.5rem);
+  transform: translate(-0.4rem, -0.4rem) !important;
   cursor: pointer;
 }
 #jannatinnaim-01 .hero__banner__overlays__voucher {
@@ -211,14 +220,14 @@
   }
   #jannatinnaim-01 .hero__banner__overlays__reviews {
     bottom: auto;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%);
   }
   #jannatinnaim-01 .hero__banner__overlays__stats {
     bottom: auto;
     right: auto;
-    top: 72%;
+    top: 74%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -274,7 +283,41 @@
   justify-content: space-between;
   align-items: center;
 }
-#jannatinnaim-01 .stats__showcase > * {
+#jannatinnaim-01 .stats__showcase__prev {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-01 .stats__showcase__prev:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#jannatinnaim-01 .stats__showcase__prev__image {
+  border-radius: 50%;
+  display: block;
+}
+#jannatinnaim-01 .stats__showcase__next {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-01 .stats__showcase__next:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#jannatinnaim-01 .stats__showcase__next__image {
+  border-radius: 50%;
+  display: block;
+}
+#jannatinnaim-01 .stats__showcase__icons {
+  display: flex;
+  gap: 0.75rem;
+}
+#jannatinnaim-01 .stats__showcase__icons > * {
   border-radius: 1rem;
 }
 @media (max-width: 1140px) {
@@ -423,6 +466,8 @@
   padding: 0.4rem;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  background: #ffffff;
+  transition: all 0.3s ease;
 }
 #jannatinnaim-05 .gifts__logos__container__item {
   display: block;
@@ -430,17 +475,33 @@
   padding: 1rem;
   width: 64px;
 }
+#jannatinnaim-05 .gifts__logos__container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 #jannatinnaim-05 .gifts__logos__container:nth-child(1) .gifts__logos__container__item {
   background: linear-gradient(to bottom, #effafc, #e8f3f5);
+}
+#jannatinnaim-05 .gifts__logos__container:nth-child(1):hover {
+  background: linear-gradient(to bottom, #acedf8, #e8f3f5);
 }
 #jannatinnaim-05 .gifts__logos__container:nth-child(2) .gifts__logos__container__item {
   background: linear-gradient(to bottom, #feefef, #f7e8e8);
 }
+#jannatinnaim-05 .gifts__logos__container:nth-child(2):hover {
+  background: linear-gradient(to bottom, #ffa2a2, #f7e8e8);
+}
 #jannatinnaim-05 .gifts__logos__container:nth-child(3) .gifts__logos__container__item {
   background: linear-gradient(to bottom, #fefbef, #f8f5e9);
 }
+#jannatinnaim-05 .gifts__logos__container:nth-child(3):hover {
+  background: linear-gradient(to bottom, #ffeea9, #f8f5e9);
+}
 #jannatinnaim-05 .gifts__logos__container:nth-child(4) .gifts__logos__container__item {
   background: linear-gradient(to bottom, #eff9fe, #e9f3f8);
+}
+#jannatinnaim-05 .gifts__logos__container:nth-child(4):hover {
+  background: linear-gradient(to bottom, #a1e0ff, #e9f3f8);
 }
 #jannatinnaim-05 .testimonials__container {
   padding: 4rem 0;
@@ -463,6 +524,7 @@
 #jannatinnaim-05 .testimonials__reviews__content__info {
   font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
+  opacity: 0.7;
 }
 #jannatinnaim-05 .testimonials__reviews__content__author {
   display: flex;
@@ -474,12 +536,17 @@
   font-weight: 500;
 }
 #jannatinnaim-05 .testimonials__reviews__content__author__info {
-  opacity: 0.65;
+  opacity: 0.45;
 }
 #jannatinnaim-05 .testimonials__reviews__content__switch > * {
   padding: 1rem;
   display: inline-block;
   border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#jannatinnaim-05 .testimonials__reviews__content__switch > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 #jannatinnaim-05 .testimonials__reviews__content__switch__previous {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
