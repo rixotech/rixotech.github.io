@@ -377,6 +377,12 @@
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         padding: 1rem;
         border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
 
         &__image {
           border-radius: 50%;
@@ -389,6 +395,12 @@
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         padding: 1rem;
         border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
 
         &__image {
           border-radius: 50%;
@@ -679,6 +691,7 @@
         &__info {
           font-family: $primary-font-family;
           margin-bottom: 2rem;
+          opacity: 0.7;
         }
 
         &__author {
@@ -692,7 +705,7 @@
           }
 
           &__info {
-            opacity: 0.65;
+            opacity: 0.45;
           }
         }
 
@@ -701,6 +714,12 @@
             padding: 1rem;
             display: inline-block;
             border-radius: 50%;
+            transition: all 0.3s ease;
+
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.1);
+            }
           }
 
           &__previous {
