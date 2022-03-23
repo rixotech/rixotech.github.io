@@ -329,17 +329,17 @@
     text-align: center;
     margin-bottom: 2rem;
   }
-  #jannatinnaim-01 .stats__showcase {
+  #jannatinnaim-01 .stats__showcase__icons {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  #jannatinnaim-01 .stats__showcase > * {
+  #jannatinnaim-01 .stats__showcase__icons > * {
     width: 40%;
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 768px) {
-  #jannatinnaim-01 .stats__showcase > * {
+  #jannatinnaim-01 .stats__showcase__icons > * {
     width: 100%;
   }
 }
@@ -581,18 +581,14 @@
   --clr-secondary: #aaaab3;
   --clr-third: hsl(32, 97%, 59%);
   --clr-foruth: hsla(32, 97%, 59%, 0.4);
+  --clr-main: hsl(241, 49%, 37%);
   /* footer section */
   /* footer nav */
   /* .footer-menu */
-}
-#shiblinoman-01 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* last footer */
 }
 #shiblinoman-01 .container {
-  width: 95%;
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 #shiblinoman-01 a {
@@ -601,12 +597,9 @@
 #shiblinoman-01 .footer {
   padding-top: 2rem;
 }
-#shiblinoman-01 .footer .container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-#shiblinoman-01 .footer-nav {
-  padding-top: 2.5rem;
+#shiblinoman-01 .footer-item {
+  display: flex;
+  justify-content: space-between;
 }
 #shiblinoman-01 .fa-house {
   font-size: 2.3rem;
@@ -621,44 +614,54 @@
 }
 #shiblinoman-01 .fa-twitter {
   padding: 9px;
-  background-color: var(--clr-foruth);
-  color: var(--clr-primary);
+  background-color: var(--clr-main);
+  color: #ffffff;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 #shiblinoman-01 .fa-twitter:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease;
+  background-color: #00b9ff;
+  color: white;
 }
 #shiblinoman-01 .fa-facebook-f {
   padding: 9px 13px;
-  background-color: var(--clr-foruth);
-  color: var(--clr-primary);
+  background-color: var(--clr-main);
+  color: #ffffff;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 #shiblinoman-01 .fa-facebook-f:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease;
+  background-color: #4267b2;
+  color: white;
 }
 #shiblinoman-01 .fa-linkedin-in {
   padding: 9px 13px;
-  background-color: var(--clr-foruth);
-  color: var(--clr-primary);
+  background-color: var(--clr-main);
+  color: #ffffff;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 #shiblinoman-01 .fa-linkedin-in:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease;
+  background-color: #0072b1;
+  color: white;
 }
 #shiblinoman-01 .footer-icon {
   padding-right: 17px;
+  transition: all 0.3s ease;
+}
+#shiblinoman-01 .footer-icon:hover {
+  transform: scale(1.1);
 }
 #shiblinoman-01 .footer-icons {
   padding-top: 3rem;
 }
 #shiblinoman-01 .footer-menu {
   display: flex;
-  padding-top: 3rem;
   justify-content: space-between;
+  gap: 50px;
 }
 #shiblinoman-01 .fm-header {
   padding-bottom: 3rem;
@@ -674,6 +677,18 @@
 #shiblinoman-01 .fm-list a {
   color: var(--clr-secondary);
 }
+#shiblinoman-01 .fm-list a:hover {
+  color: black;
+}
+#shiblinoman-01 .last-footer {
+  padding-top: 3rem;
+}
+#shiblinoman-01 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.5px solid #dcdcdd;
+}
 #shiblinoman-01 .ftr-text {
   color: var(--clr-secondary);
   padding-top: 2.5rem;
@@ -684,6 +699,46 @@
 }
 #shiblinoman-01 .ftr-btn {
   padding-top: 2.5rem;
+}
+#shiblinoman-01 .ftr-bn:hover {
+  color: #1d1d1f;
+}
+@media (max-width: 640px) {
+  #shiblinoman-01 .footer-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  #shiblinoman-01 .footer-nav {
+    align-self: center !important;
+    margin-bottom: 50px;
+  }
+  #shiblinoman-01 .footer-menu {
+    flex-direction: column;
+  }
+  #shiblinoman-01 .copyright {
+    flex-direction: column;
+  }
+  #shiblinoman-01 .ftr-text {
+    text-align: center;
+  }
+  #shiblinoman-01 .fm-header {
+    padding-bottom: 1.5rem;
+  }
+}
+@media (max-width: 950px) {
+  #shiblinoman-01 .footer-item {
+    gap: 25px;
+  }
+  #shiblinoman-01 .footer-nav {
+    min-width: 30%;
+    align-self: flex-start;
+  }
+  #shiblinoman-01 .footer-menu {
+    flex-wrap: wrap;
+  }
+  #shiblinoman-01 .fm-item {
+    flex: 1 1 40%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
